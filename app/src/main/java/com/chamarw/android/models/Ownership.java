@@ -1,23 +1,22 @@
 package com.chamarw.android.models;
 
 import java.io.Serializable;
-import java.util.ArrayList;
 
 public class Ownership implements Serializable {
 
     private String address;
     private String pic;
-    private int totalSavings;
-    private int totalGoal;
+    private int savings;
+    private int goal;
 
     public Ownership() {
     }
 
-    public Ownership(String address, String pic, int totalSavings, int totalGoal) {
+    public Ownership(String address, String pic, int savings, int goal) {
         this.address = address;
         this.pic = pic;
-        this.totalSavings = totalSavings;
-        this.totalGoal = totalGoal;
+        this.savings = savings;
+        this.goal = goal;
     }
 
     public String getAddress() {
@@ -36,20 +35,20 @@ public class Ownership implements Serializable {
         this.pic = pic;
     }
 
-    public int getTotalSavings() {
-        return totalSavings;
+    public int getSavings() {
+        return savings;
     }
 
-    public void setTotalSavings(int totalSavings) {
-        this.totalSavings = totalSavings;
+    public void setSavings(int savings) {
+        this.savings = savings;
     }
 
-    public int getTotalGoal() {
-        return totalGoal;
+    public int getGoal() {
+        return goal;
     }
 
-    public void setTotalGoal(int totalGoal) {
-        this.totalGoal = totalGoal;
+    public void setGoal(int goal) {
+        this.goal = goal;
     }
 
     @Override
