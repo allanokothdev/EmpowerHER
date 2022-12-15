@@ -1,0 +1,34 @@
+<resources>
+    <string-array name="categories">
+        <item>Rental Property</item>
+        <item>Commercial Property</item>
+        <item>Land Sale</item>
+        <item>Automobile</item>
+        <item>Electronics</item>
+        <item>Machinery</item>
+        <item>Business</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>Female</item>
+        <item>Male</item>
+    </string-array>
+
+    <string-array name="tabs">
+        <item>Updates</item>
+        <item>Investments</item>
+        <item>Members</item>
+    </string-array>
+
+    <string-array name="industries">
+        <item>Technology</item>
+        <item>Entertainment</item>
+        <item>Business</item>
+        <item>Transport</item>
+        <item>Restaurants</item>
+        <item>Health</item>
+        <item>Education</item>
+        <item>Communication</item>
+    </string-array>
+
+</resources>

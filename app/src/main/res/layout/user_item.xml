@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_8"
+    android:background="@color/colorWhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:elevation="@dimen/dimen_5"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/lincoln"
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/dimen_60"
+        android:layout_height="@dimen/dimen_60" />
+
+    <LinearLayout
+        android:padding="@dimen/padding_10"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/imageView"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:fontFamily="@font/open_sans_semibold"
+            app:drawableEndCompat="@drawable/round_verified_round_24"
+            android:drawablePadding="@dimen/dimen_5"
+            android:text="@string/app_name"
+            android:layout_marginBottom="3dp"
+            android:ellipsize="end"
+            android:scrollHorizontally="true"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <TextView
+            android:text="@string/_0xd0fcf6912e09015324dd0899c1efaaba6a9f43ea"
+            android:ellipsize="end"
+            android:scrollHorizontally="true"
+            android:maxLines="1"
+            android:textColor="@color/feminineEight"
+            android:fontFamily="@font/open_sans_regular"
+            android:id="@+id/subTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout >

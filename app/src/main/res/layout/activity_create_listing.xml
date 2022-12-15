@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/container"
+    android:layout_height="match_parent"
+    tools:context=".CreateListing">
+
+    <androidx.appcompat.widget.Toolbar
+        app:title="List New Asset"
+        app:titleTextColor="@color/toolbarTitle"
+        android:background="@color/toolbarBackground"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:background="@color/white"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView"
+                    app:cardCornerRadius="@dimen/padding_8"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:transitionName="userImageTransition"
+                        android:src="@drawable/lincoln"
+                        android:id="@+id/imageView"
+                        android:scaleType="centerCrop"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:contentDescription="@string/app_name" />
+
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:layout_marginStart="@dimen/dimen_16"
+                    android:layout_toEndOf="@id/cardView"
+                    android:drawableTint="@color/colorWhite"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="@dimen/dimen_24"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/primary_background_button"
+                    android:text="@string/upload_asset_image"
+                    android:textAlignment="center"
+                    android:id="@+id/uploadButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_60"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/certCardView"
+                    app:cardCornerRadius="@dimen/padding_8"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:transitionName="userImageTransition"
+                        android:src="@drawable/lincoln"
+                        android:id="@+id/certImageView"
+                        android:scaleType="centerCrop"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:contentDescription="@string/app_name" />
+
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:layout_marginStart="@dimen/dimen_16"
+                    android:layout_toEndOf="@id/certCardView"
+                    android:drawableTint="@color/colorWhite"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="@dimen/dimen_24"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/primary_background_button"
+                    android:text="@string/upload_proof_of_ownership"
+                    android:textAlignment="center"
+                    android:id="@+id/certButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_60"/>
+
+
+            </RelativeLayout>
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:drawableStart="@drawable/outline_article_24"
+                android:drawablePadding="5dp"
+                android:textSize="18sp"
+                android:textCursorDrawable="@drawable/cursor_drawable"
+                android:cursorVisible="true"
+                android:textColor="@color/black"
+                android:drawableTint="@color/colorPrimary"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:fontFamily="@font/open_sans_bold"
+                android:id="@+id/titleTextInputEditText"
+                android:hint="@string/enter_listing_title"
+                android:background="@drawable/rounded_chat_container"
+                android:minHeight="@dimen/dimen_60"
+                android:paddingEnd="@dimen/dimen_10"
+                android:paddingStart="@dimen/dimen_10"
+                android:layout_marginTop="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:drawableStart="@drawable/outline_article_24"
+                android:drawablePadding="@dimen/padding_5"
+                android:drawableTint="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textCursorDrawable="@drawable/cursor_drawable"
+                android:cursorVisible="true"
+                android:imeOptions="actionNext"
+                android:inputType="textAutoComplete|textImeMultiLine|textLongMessage|textAutoCorrect|textMultiLine"
+                android:fontFamily="@font/open_sans_semibold"
+                android:id="@+id/summaryTextInputEditText"
+                android:hint="@string/enter_listing_summary"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/rounded_chat_container"
+                android:minHeight="@dimen/dimen_60"
+                android:paddingEnd="@dimen/dimen_10"
+                android:paddingStart="@dimen/dimen_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:drawablePadding="5dp"
+                android:drawableTint="@color/colorPrimary"
+                android:drawableStart="@drawable/ic_location_on_black_24dp"
+                android:textSize="18sp"
+                android:textCursorDrawable="@drawable/cursor_drawable"
+                android:cursorVisible="true"
+                android:imeOptions="actionNext"
+                android:inputType="text|textAutoComplete"
+                android:fontFamily="@font/open_sans_semibold"
+                android:id="@+id/locationTextInputEditText"
+                android:hint="@string/enter_listing_location"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/rounded_chat_container"
+                android:minHeight="@dimen/dimen_60"
+                android:paddingEnd="@dimen/dimen_10"
+                android:paddingStart="@dimen/dimen_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:drawablePadding="5dp"
+                android:drawableTint="@color/colorPrimary"
+                android:drawableStart="@drawable/outline_attach_money_24"
+                android:textSize="18sp"
+                android:textCursorDrawable="@drawable/cursor_drawable"
+                android:cursorVisible="true"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:fontFamily="@font/open_sans_semibold"
+                android:id="@+id/valueTextInputEditText"
+                android:hint="@string/enter_asset_value"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/rounded_chat_container"
+                android:minHeight="@dimen/dimen_60"
+                android:paddingEnd="@dimen/dimen_10"
+                android:paddingStart="@dimen/dimen_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:fontFamily="@font/open_sans_bold"
+                android:layout_marginTop="16dp"
+                android:text="@string/select_asset_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Spinner
+                android:layout_marginTop="8dp"
+                android:id="@+id/spinner"
+                android:imeOptions="actionDone"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/rounded_chat_container"
+                android:entries="@array/categories" />
+
+
+            <Button
+                android:textAllCaps="false"
+                android:layout_marginTop="@dimen/dimen_24"
+                android:textSize="16sp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:background="@drawable/primary_background_button"
+                android:textColor="@color/colorWhite"
+                android:text="@string/publish"
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_60"/>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/progressBar"
+        android:layout_gravity="bottom|center_horizontal"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_30"
+        app:indicatorColor="@color/colorPrimary"
+        app:indicatorName="BallPulseIndicator" />
+</RelativeLayout>

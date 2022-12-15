@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_8"
+    android:background="@color/colorWhite">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:elevation="@dimen/dimen_5"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/celodollar"
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/dimen_60"
+        android:layout_height="@dimen/dimen_60" />
+
+    <TextView
+        android:ellipsize="end"
+        android:scrollHorizontally="true"
+        android:maxLines="1"
+        android:textSize="18sp"
+        android:layout_toStartOf="@id/linearLayout"
+        android:layout_toEndOf="@id/imageView"
+        android:layout_marginEnd="@dimen/dimen_10"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:text="@string/deposit"
+        android:fontFamily="@font/open_sans_bold"
+        android:id="@+id/textView"
+        android:textAlignment="center"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAllCaps="false"
+        tools:ignore="RelativeOverlap" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/_1000_matic"
+            android:layout_marginBottom="3dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/open_sans_semibold"
+            android:scrollHorizontally="true"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:id="@+id/subItemTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:text="@string/_100"
+            android:ellipsize="end"
+            android:scrollHorizontally="true"
+            android:maxLines="1"
+            android:textColor="@color/feminineEight"
+            android:fontFamily="@font/open_sans_semibold"
+            android:id="@+id/subTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout >

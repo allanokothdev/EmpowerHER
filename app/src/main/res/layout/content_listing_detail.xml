@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ListingDetail"
+    android:fitsSystemWindows="true"
+    tools:showIn="@layout/activity_listing_detail">
+
+    <LinearLayout
+        android:id="@+id/linearContentLayout"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="18sp"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="@string/app_name"
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="@color/colorBlack"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="@string/kes_20000"
+                android:id="@+id/subTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:drawablePadding="5dp"
+            android:maxLines="1"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorBlack"
+            android:text="@string/nairobi_area_kenya"
+            android:fontFamily="@font/open_sans_regular"
+            android:id="@+id/locationTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:drawableLeftCompat="@drawable/ic_location_on_black_24dp"
+            app:drawableStartCompat="@drawable/ic_location_on_black_24dp"
+            app:drawableTint="@color/colorPrimary" />
+
+        <View
+            android:layout_marginTop="16dp"
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="@string/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="18dp"
+            android:textColor="@color/colorBlack"
+            android:text="@string/summary_two"
+            android:textSize="16sp"
+            android:fontFamily="@font/open_sans_regular"
+            android:id="@+id/subItemTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_marginTop="16dp"
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+
+
+        <Button
+            android:padding="@dimen/dimen_8"
+            android:fontFamily="@font/open_sans_semibold"
+            android:textAlignment="center"
+            android:paddingEnd="20dp"
+            android:paddingStart="35dp"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/primary_background_button"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:minHeight="@dimen/dimen_60"
+            android:layout_height="wrap_content"
+            android:text="@string/create_chama_for_this_asset" />
+
+        <View
+            android:layout_marginTop="16dp"
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="@string/proof_of_ownership"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_marginTop="@dimen/dimen_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:contentDescription="@string/cover_image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cover"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:1"
+                android:id="@+id/coverImageView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

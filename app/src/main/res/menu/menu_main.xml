@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.chamarw.android.MainActivity">
+
+    <item
+        android:icon="@drawable/ic_share_blue_24dp"
+        android:iconTint="@color/colorWhite"
+        android:id="@+id/action_signout"
+        android:orderInCategory="100"
+        android:title="@string/sign_out"
+        app:showAsAction="never" />
+
+</menu>

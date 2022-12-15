@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_polls">
+
+    <fragment
+        android:id="@+id/navigation_polls"
+        android:name="com.kenyapollske.android.fragments.PollFragment"
+        android:label="Vote for Candidates"
+        tools:layout="@layout/fragment_poll" />
+
+    <fragment
+        android:id="@+id/navigation_topics"
+        android:name="com.kenyapollske.android.fragments.PartyFragment"
+        android:label="Vote for Issues"
+        tools:layout="@layout/fragment_topic" />
+
+    <fragment
+        android:id="@+id/navigation_party"
+        android:name="com.kenyapollske.android.fragments.PartyFragment"
+        android:label="Parties"
+        tools:layout="@layout/fragment_party" />
+</navigation>

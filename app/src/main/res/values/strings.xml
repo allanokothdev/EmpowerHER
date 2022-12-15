@@ -1,0 +1,146 @@
+<resources>
+    <!-- Splash &amp;-->
+    <string name="app_name">Chama</string>
+    <string name="slogan_one">Collective Investment</string>
+
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="address">Address</string>
+    <string name="cUSD">MATIC</string>
+
+    <string name="value">2%f, MATIC</string>
+    <string name="balance">Balance: %s %s</string>
+    <string name="balanced">Balance: %.02f %s</string>
+    <string name="savings">Balance: %.02f %s</string>
+    <string name="dollar">$%d</string>
+    <string name="dollarDouble">$%.02f</string>
+    <string name="currencyDouble">%s %.02f</string>
+    <string name="dollarStr">$%s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="btn_checkout">CHECKOUT (%s)</string>
+    <string name="lbl_item_price_quantity">%s x %d</string>
+    <string name="quantity">%d qty</string>
+    <string name="token_price">%s %s</string>
+    <string name="token_priced">%.02f %s</string>
+    <string name="exchanged">1 MATIC = %.02f %s</string>
+
+    <string name="privacypolicy">By Creating an account with Chama App, you agree to our <font color='#6698FF'> Privacy Policy</font> and <font color='#6698FF'> Terms of Service</font></string>
+    <string name="continuewithGoogle">Continue with Google</string>
+    <string name="allrightsreserved">&#169; Chama Inc 2023 All Rights Reserved.</string>
+    <string name="msg_subscribed">Subscribed to Notifications</string>
+    <string name="msg_token_fmt" translatable="false">FCM registration Token: %s</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="default_notification_channel_name" translatable="true">Weather</string>
+    <string name="msg_subscribe_failed">Failed to subscribe to Notifications</string>
+    <string name="fcm_message">FCM Message</string>
+
+    <!-- Create Profile -->
+    <string name="createuserprofile">Create User Profile</string>
+    <string name="entername">Enter your Name</string>
+    <string name="finish">Finish</string>
+    <string name="name_party">%d, %s</string>
+    <string name="create_account">Create Account</string>
+
+    <string name="cover_image">Cover Image</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="profile_image">Profile Image</string>
+    <string name="select_education_level">Select Education Level</string>
+    <string name="select_your_date_of_birth">Select your Date of Birth</string>
+    <string name="register">Register</string>
+    <string name="cancel">Cancel</string>
+    <string name="done">Done</string>
+    <string name="get_started">Get Started</string>
+    <string name="summary_one">Save Now, Invest your Future</string>
+    <string name="summary_two">With this app, you can Start and Invest through a Savings Group. </string>
+    <string name="_100_000_cusd">100,000 cUSD</string>
+    <string name="message">Message</string>
+    <string name="gsgyhsus76bs">GSGYHSUS76BS</string>
+    <string name="_25_000">25,000</string>
+    <string name="mon_13_february_2021">Mon, 13 February 2021</string>
+    <string name="accept">Accept</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="_4_min">4 min</string>
+    <string name="enter_message">Enter Message</string>
+    <string name="savings_group_chat">Savings Group Chat</string>
+    <string name="listing_agent">Listing Agent</string>
+    <string name="save_for_this_investment">Save for this Investment</string>
+    <string name="description">Description</string>
+    <string name="nairobi_area_kenya">Nairobi Area, Kenya</string>
+    <string name="kes_20000">KES 20000</string>
+    <string name="group_chat">Group Chat</string>
+    <string name="create_listing">Create Listing</string>
+    <string name="enter_listing_name">Enter Listing Name</string>
+    <string name="enter_listing_cost">Enter Listing Cost</string>
+    <string name="select_listing_category">Select Listing Category</string>
+    <string name="publish">Publish</string>
+    <string name="join_savings_group">Join Savings Group</string>
+    <string name="we_are_investing_in">We are Investing In</string>
+    <string name="create_savings_group">Create Savings Group</string>
+    <string name="enter_sacco_name">Enter Sacco Name</string>
+    <string name="enter_group_name">Enter Group Name</string>
+    <string name="enter_group_summary">Enter Group Summary</string>
+    <string name="savings_group_goal">Savings Group Goal</string>
+    <string name="invite_members">Invite Members</string>
+
+    <string name="select_gender">Select Gender</string>
+    <string name="create_saving_group_for_this_investment">Create Saving Group for this Investment</string>
+    <string name="saving_groups">Saving Groups</string>
+    <string name="investments">Investments</string>
+    <string name="savings_group">Savings Group</string>
+
+    <string name="download_receipt">Download Receipt</string>
+    <string name="transaction_id">Transaction ID</string>
+    <string name="transaction_successful">Transaction Successful</string>
+    <string name="status">Status</string>
+    <string name="sent_to">Sent To</string>
+    <string name="transaction_type">Transaction Type</string>
+    <string name="_20_jan_2022">20/Jan/2022</string>
+    <string name="_10_30_45">10:30:45</string>
+    <string name="payment_receipt">Payment Receipt</string>
+    <string name="savings_group_deposit">Savings Group Deposit</string>
+    <string name="transaction_reference">TYUOUNDN67993</string>
+    <string name="available">Available</string>
+    <string name="bought">Bought</string>
+    <string name="invite">Invite</string>
+    <string name="invited">Invited</string>
+    <string name="selected">Selected</string>
+    <string name="deposit">Deposit</string>
+    <string name="select_investment">Select Investment</string>
+    <string name="select">Select</string>
+    <string name="deposit_money">Deposit Money</string>
+    <string name="didn_t_receive_the_otp">Didn\'t receive the OTP?</string>
+
+    <string name="chama_card">Chama Card</string>
+    <string name="_0xd0fcf6912e09015324dd0899c1efaaba6a9f43ea">0xd0fcf6912e09015324dd0899c1efaaba6a9f43ea</string>
+    <string name="scan_to_join">Scan to Join</string>
+    <string name="monday_7_december_2022">Monday 7 December 2022</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="_1000_matic">1000 MATIC</string>
+    <string name="_100">$100</string>
+    <string name="view_on_explorer">View on Explorer</string>
+    <string name="success">Success</string>
+    <string name="time">Time</string>
+    <string name="amount">Amount</string>
+    <string name="sender">Sender</string>
+    <string name="receiver">Receiver</string>
+    <string name="invest">Invest</string>
+    <string name="create_chama_for_this_asset">Create Chama for this Asset</string>
+    <string name="proof_of_ownership">Proof of Ownership</string>
+    <string name="enter_listing_title">Enter Asset Title</string>
+    <string name="enter_listing_summary">Enter Asset Summary</string>
+    <string name="enter_listing_location">Enter Asset Location</string>
+    <string name="select_asset_category">Select Asset Category</string>
+    <string name="enter_asset_value">Enter Asset Value</string>
+    <string name="upload_proof_of_ownership">Upload Proof of Ownership</string>
+    <string name="upload_asset_image">Upload Asset Image</string>
+    <string name="enter_chama_title">Enter Chama Title</string>
+    <string name="enter_chama_summary">Enter Chama Summary</string>
+    <string name="enter_chama_goal">Enter Chama Goal</string>
+    <string name="balance_3_matic">Balance: 3 MATIC</string>
+    <string name="_0">0</string>
+    <string name="mat">MAT</string>
+    <string name="savings_0">Savings: 0</string>
+    <string name="matic">MATIC</string>
+
+
+</resources>
