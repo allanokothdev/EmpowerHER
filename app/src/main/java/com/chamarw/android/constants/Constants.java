@@ -55,7 +55,8 @@ public class Constants {
     public static final String TRANSFER_ASSET = "transferAsset";
     public static final String FETCH_OWNERSHIP = "fetchOwnership";
 
-    public final static String MATIC_BALANCE = "MATIC_BALANCE";
+    public final static String TOKEN_BALANCE = "MATIC_BALANCE";
+    public final static String TOKEN_SYMBOL = "MATIC";
     public final static String SAVINGS = "SAVINGS";
 
 }

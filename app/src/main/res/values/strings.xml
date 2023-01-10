@@ -141,6 +141,7 @@
     <string name="mat">MAT</string>
     <string name="savings_0">Savings: 0</string>
     <string name="matic">MATIC</string>
+    <string name="tx">Transaction was completed successfully</string>
 
 
 </resources>

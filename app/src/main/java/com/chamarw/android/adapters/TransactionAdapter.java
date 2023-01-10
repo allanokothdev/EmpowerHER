@@ -112,7 +112,7 @@ public class TransactionAdapter extends RecyclerView.Adapter{
         textView.setText(transaction.getId());
         subTextView.setText(transaction.getTimestamp());
         String formattedValue = String.format(Locale.ENGLISH,"%.2f",Double.parseDouble(transaction.getValue()));
-        subItemTextView.setText(mContext.getString(R.string.token_price,formattedValue,"MATIC"));
+        subItemTextView.setText(mContext.getString(R.string.token_price,formattedValue,Constants.TOKEN_SYMBOL));
         senderTextView.setText(transaction.getSender());
         receiverTextView.setText(transaction.getReceiver());
         closeImageView.setOnClickListener(v -> bottomSheetDialog.dismiss());

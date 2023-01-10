@@ -30,7 +30,6 @@ import com.wang.avi.AVLoadingIndicatorView;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
-import java.util.UUID;
 
 public class Deposit extends AppCompatActivity implements View.OnClickListener {
 
@@ -62,9 +61,9 @@ public class Deposit extends AppCompatActivity implements View.OnClickListener {
         closeImageView.setOnClickListener(this);
         button.setOnClickListener(this);
 
-        toBalanceTextView.setText(mContext.getString(R.string.savings,Double.parseDouble(GetUser.fetchObject(mContext,chama.getId())),"MATIC"));
-        balance = (int) Double.parseDouble(GetUser.fetchObject(mContext,Constants.MATIC_BALANCE));
-        fromBalanceTextView.setText(mContext.getString(R.string.balanced,Double.parseDouble(GetUser.fetchObject(mContext,Constants.MATIC_BALANCE)),"MATIC"));
+        toBalanceTextView.setText(mContext.getString(R.string.savings,Double.parseDouble(GetUser.fetchObject(mContext,chama.getId())),Constants.TOKEN_SYMBOL));
+        balance = (int) Double.parseDouble(GetUser.fetchObject(mContext,Constants.TOKEN_BALANCE));
+        fromBalanceTextView.setText(mContext.getString(R.string.balanced,Double.parseDouble(GetUser.fetchObject(mContext,Constants.TOKEN_BALANCE)),Constants.TOKEN_SYMBOL));
         String savings = GetUser.fetchObject(mContext,chama.getId());
 
         fromAmountTextInputEditText.addTextChangedListener(new TextWatcher() {
@@ -112,7 +111,7 @@ public class Deposit extends AppCompatActivity implements View.OnClickListener {
                 Map<String, Object> result = (Map<String, Object>) task.getResult().getData();
                 assert result != null;
                 String responses = Objects.requireNonNull(result.get("link")).toString();
-                String savings = Objects.requireNonNull(result.get("totalSavings")).toString();
+                String savings = Objects.requireNonNull(result.get("savings")).toString();
                 GetUser.saveObject(mContext,chama.getId(),savings);
                 progressBar.setVisibility(View.INVISIBLE);
                 confirmTransaction(responses);
@@ -140,7 +139,7 @@ public class Deposit extends AppCompatActivity implements View.OnClickListener {
         behavior.setPeekHeight(screenUtils.getHeight());
 
         imageView.setImageResource(R.drawable.ic_done_gr);
-        textView.setText("Transaction was completed successfully");
+        textView.setText(R.string.tx);
         subTextView.setOnClickListener(view12 -> {
             try {
                 Intent indie = new Intent(Intent.ACTION_VIEW);
