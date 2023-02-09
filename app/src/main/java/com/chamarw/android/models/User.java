@@ -6,6 +6,7 @@ public class User implements Serializable {
 
     private String id;   //USER ID
     private String address;   //USER ADDRESS
+    String privateKey;
     private String pic;   //USER PIC
     private String name;   //USER NAME
     private String token;   //USER TOKEN
